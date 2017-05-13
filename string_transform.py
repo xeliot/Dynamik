@@ -2,6 +2,10 @@
 #shiny
 #find the distance between sink and shiny
 
+def print_matrix(matrix):
+    for ar in matrix:
+        print ar
+
 def translate(str1, str2):
     matrix = []
     for i in range(0, len(str1)):
@@ -21,8 +25,8 @@ def translate(str1, str2):
     for i in range(1, len(str1)):
         matrix[i][0] = matrix[i-1][0] + 1
 
-    print matrix
+    print_matrix(matrix)
 
 str1 = "sink"
 str2 = "shiny"
-print(translate(str1, str2))
+translate(str1, str2)
