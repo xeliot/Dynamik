@@ -43,7 +43,7 @@ def translate(str1, str2):
 #str1 = "sink"
 #str2 = "shiny"
 
-str1 = "suitable"
-str2 = "situation"
+str1 = "abcd"
+str2 = "bcfg"
 distance = translate(str1, str2)
 print distance
