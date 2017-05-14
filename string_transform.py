@@ -1,5 +1,6 @@
 #sink
 #shiny
+#PROBLEM 1
 #find the distance between sink and shiny
 
 def print_matrix(matrix):
@@ -36,8 +37,10 @@ def translate(str1, str2):
             possible.append(matrix[i-1][j]+1)
             matrix[i][j]=min(possible)
 
+    #print matrix to make sure everything is ok
     print_matrix(matrix)
 
+    #return the bottom left element of the matrix
     return matrix[len(str1)-1][len(str2)-1]
 
 #str1 = "sink"
